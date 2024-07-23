@@ -1,0 +1,52 @@
+#regDiv{
+
+width:500px;
+height: 350px;
+margin:auto;
+background-color:Cornsilk ;
+padding:20px;
+text-align:center;
+border-style:solid;
+border-color:brown;
+border-width:3px;
+}
+
+.body
+{background-image:url("https://images.unsplash.com/photo-1617957718614-8c23f060c2d0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8b3JhbmdlJTIwZ3JhZGllbnR8ZW58MHx8MHx8fDA%3D&w=1000&q=80");
+	background-repeat: no-repeat;
+	background-size:cover;
+	background-attachment:fixed;
+	background-position:center center;
+	
+
+}
+
+.formhead{
+	color:brown;
+	font-size:15px;
+	font-weight:bold;
+	font-family: "Times New Roman";
+	padding:10px;
+	font-size:17px;
+
+}
+
+#button 
+{
+	background-color:orange;
+	position:relative;
+	margin:auto;
+	width:200px;
+	height:40px;
+	border-style: solid;
+	border-width:1px;
+	font-weight: bold;
+	border-radius: 20px;
+}
+
+h1
+{
+	color:brown;
+	font-size:30px;
+	font-style:bold;
+}

@@ -1,0 +1,14 @@
+<html>
+<head>
+<title>Home</title>
+</head>
+
+<body style="background-color:lightskyblue;">
+<h1 style="color:darkblue">You have successfully signed in</h1>
+<h3 id="para1"></h3>
+<script>
+    var reg_name=sessionStorage.getItem("reg_name");
+    document.getElementById("para1").innerHTML="Welcome "+reg_name+"!";
+    </script>
+
+</body>

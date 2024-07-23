@@ -1,0 +1,62 @@
+<html>
+<center>
+<head>
+<title> log-in page</title>
+<link rel="stylesheet" type="text/css" href="s">
+
+</head>
+<body style="background-color:darkblue;"><b>
+<div style="border: 5px solid;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width:40%;
+  height:50%;
+  transform: translate(-50%, -50%);background-color:lightskyblue;text-align:center;">
+<h1>User Log-In Page</h1>
+<form>
+Username: <input type="text" name="email" id="email"/>
+<br></br>
+Password: <input type="password"  name="pass" id="pass" />
+<br> </br>
+<button  style="background-color:yellow;" type="button" onclick="validate()" name="Submit">Submit</button>
+<p style="color:blue" id="d1" >
+<br>
+<p style="color:blue" id="d2" >
+</form>
+</b>
+</div>
+
+<script>
+function validate()
+{
+var username= document.getElementById("email").value;
+var password= document.getElementById("pass").value;
+var regrex="^[a-zA-Z0-9+_.-]+@[a-zA-Z0-9.-]+$";
+var passcheck="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$";
+var reg_email=sessionStorage.getItem("reg_email");
+var reg_password=sessionStorage.getItem("reg_password");
+
+
+if(!(username.match(regrex))){
+document.getElementById("d1").innerHTML= "Invalid email id. Check your email address!";}
+
+
+if(!(password.match(passcheck))){
+document.getElementById("d2").innerHTML= "Invalid password";}
+
+
+
+if(username==reg_email && password==reg_password)
+{
+location.replace("home.html");
+}
+else
+{
+  alert("Username and password does not match");
+}
+}
+</script>
+
+</body>
+</html>

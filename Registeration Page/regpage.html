@@ -1,0 +1,81 @@
+<html>
+<head>
+	<title>Register page</title>
+	<link rel="stylesheet" href="register.css"/>
+</head>
+<body class="body">
+	<h1 style="visibility: hidden;">nma</h1><h3 style="visibility: hidden;">nma</h3>
+	<div id="regDiv">
+	<h1>REGISTER HERE</h1>
+		
+		<table >
+		<form>
+		<tr><td class="formhead">Name:</td>
+		<td><input type="text" id="name"/></td</tr>
+		<tr><td class="formhead">Email:</td>
+		<td><input type="text" id="email"/></td></tr>
+		<tr><td class="formhead">Gender:   
+			<td class="formhead"><input type="radio" name="gender" id="male"/>Male
+			<input type="radio" name="gender" id="female"/>Female
+			<input type="radio" name="gender" id="other"/>Other</td></tr>
+		<tr><td class="formhead">Password:</td>
+		<td><input type="password" name="password" id="password"/></tr>
+		<tr><td class="formhead">Confirm Password:</td>
+			<td><input type="password" name="passwordConfirm" id="passConfirm"/></td></tr></form></table><br>
+		<center><button id="button" onclick="validate()" type="button" >Submit</button></center></table>
+		</form>
+	</div>
+
+<script>
+function validate()
+{ 
+	var name=document.getElementById("name").value;
+	var email=document.getElementById("email").value;
+	var password=document.getElementById("password").value;
+	var passConfirm=document.getElementById("passConfirm").value;
+	sessionStorage.setItem("reg_email",email);
+	sessionStorage.setItem("reg_password",password);
+	sessionStorage.setItem("reg_name",name);
+
+	
+var name_validate="^[a-zA-Z]+ [a-zA-Z]+$";
+var email_validate="^[a-zA-Z0-9+_.-]+@[a-zA-Z0-9.-]+$";
+var password_validate="^(?=.*[0-9])(?=.*[!@#$%^&*])[a-zA-Z0-9!@#$%^&*]{6,16}$";
+
+if(!(name.match(name_validate)))
+{
+	alert("Name cannot contain numbers and special characters");
+}
+
+
+else if(!(email.match(email_validate)))
+{
+	alert("Invalid email id. Check your email address!");
+}
+
+else if((document.getElementById("male").checked==false)&&(document.getElementById("female").checked==false)&&(document.getElementById("other").checked==false))
+{
+	alert("Choose gender");
+}
+
+else if(!(password.match(password_validate)))
+{
+	alert("Invalid password");
+}
+
+
+else if(password != passConfirm)
+{
+     window.alert("Passwords do not match!");
+}
+
+else
+{
+	location.replace("login.html");
+}
+
+}
+
+</script>
+</body>
+</html>
