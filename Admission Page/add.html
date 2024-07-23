@@ -1,0 +1,71 @@
+<html>
+    <style>
+        body{background-color: rgb(249, 207, 214);
+    
+    margin:20px;
+    padding:20px;
+   
+    border:double;
+    border-color:hotpink;
+    border-width: 10px;
+    color:rgb(11, 1, 1);}
+
+    table{
+        border-width:3px;
+        border-style: solid;
+        line-height: 25px;
+        width:50%;
+        border-color:hotpink;
+        font-family:'Times New Roman', Times, serif;
+        font-weight: bold;
+        margin:auto;
+        padding:10px;
+        font-size:18px;
+        
+    }
+    #student_name,#email,#phone,#school_name,#stream,#dept,#course,#score_10,#score_12{
+        color:black;
+    }
+    #button{
+        background-color: black;
+        color:white;
+       border-color: hotpink;
+        border-radius: 15px;
+        height: 50px;
+        width:250px;
+        text-shadow: pink;
+        font-size: 15px;
+    }
+    </style>
+    <body>
+        <h1><center>Kindly check if all information are correct, before submitting</center></h1>
+        <div>
+    <table id="confirmTable">
+        <td>Name :</td><td id="student_name"/></td></tr>
+            <tr><td>Email :</td><td id="email"></td></tr>
+            <tr><td>Phone number: </td><td id="phone"></td></tr>
+            <tr><td>School :</td><td id="school_name"></td></tr>
+            <tr><td>10th Percentage: </td><td id="score_10"></td></tr>
+            <tr><td>Stream:</td><td id="stream"></td></tr>
+            <tr><td>12th Percentage:</td><td id="score_12"></td></tr>
+            <tr><td>Department:</td><td id="dept"></td></tr>
+            <tr><td>Course Opted for:</td><td id="course"></td></tr></table>
+            <table><tr><td><center><button onclick="confirm()" id="button">Submit Application</button></tr>
+    </table>
+    <script>
+        document.getElementById("student_name").innerHTML=sessionStorage.getItem("student_name");
+        document.getElementById("email").innerHTML=sessionStorage.getItem("student_email");
+        document.getElementById("phone").innerHTML=sessionStorage.getItem("phoneNumber");
+        document.getElementById("school_name").innerHTML=sessionStorage.getItem("school");
+        document.getElementById("score_10").innerHTML=sessionStorage.getItem("score_10")+"%";
+        document.getElementById("score_12").innerHTML=sessionStorage.getItem("score_12")+"%";
+        document.getElementById("stream").innerHTML=sessionStorage.getItem("stream");
+        document.getElementById("dept").innerHTML=sessionStorage.getItem("dept");
+        document.getElementById("course").innerHTML=sessionStorage.getItem("course");
+
+        function confirm(){
+            alert("Your application has been submitted successfully!!");
+            location.replace("admission.html")
+        }
+    </script>
+</html>

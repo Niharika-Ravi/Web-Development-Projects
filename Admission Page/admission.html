@@ -1,0 +1,58 @@
+//This is the index Page
+<html>
+    <head>
+        <title>Admission Page</title>
+        <link rel="stylesheet" href="addmission.css">
+    </head>
+    <script src="admission.js"></script>
+    <body>
+        <div class="head_div"><h1 class="heading">ABCD COLLEGE</h1></body></div>
+        <div class="add_div">
+            <h1><center>ADMISSION FORM</center></h1><center><form onsubmit="return false"><table>
+            <tr>
+            <td>Name :</td><td><input  type="text" id="student_name" /></td></tr>
+            <tr><td>Email :</td><td><input type="text" id="student_email" /></td></tr>
+            <tr><td>Phone number: </td><td><input type="tel" id="phoneNumber" /></td></tr>
+            <tr><td>School :</td><td><input type="text" id="school_name" /></td></tr>
+            <tr><td>10th Percentage: </td><td><input type="number" id="percentage10"/></td></tr>
+            <tr><td><label>Stream: </label></td>
+                <td><select id="stream" >    
+                <option value="">Select Stream</option>
+                <option value="Bio-Math">Bio-Math</option>
+                <option value="Computer Science">Computer Science</option>
+                <option value="Pure Science">Pure Science</option>
+                <option value="Commerce">Commerce</option></select></td>
+                </tr>
+                
+            <tr><td>12th Percentage: </td><td><input type="number"  id="percentage12" /></td></tr>
+            <tr><td>
+                <label for="">Department: </label></td>
+                <td><select name="dept" id="dept" onchange="populateCourse('dept','course')" >
+                    <option value="">Choose Dept</option>
+                    <option value="Arts">Arts</option>
+                    <option value="Science">Science</option>
+                    <option value="Commerce">Commerce</option>
+
+                </select></tr>
+                <tr>
+            
+                <td>
+                    <label for="">Course: </label></td>
+                    <td>
+                    <select name="course"  id="course">
+                        <option>Choose Course</option>
+                    </select>
+                        
+    
+                    </select>
+                    </td>
+            </tr></table><table>
+            <tr><td><center><button type="submit" onclick="validate()" id="button">SUBMIT</button></center></td></tr>        
+        </table></form>
+       
+        
+        </div>
+
+        
+    </body>
+</html>

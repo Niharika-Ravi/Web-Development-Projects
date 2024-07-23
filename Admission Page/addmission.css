@@ -1,0 +1,53 @@
+.add_div{
+    
+    width:450px;
+    height:430px;
+    margin:auto;
+    padding:10px;
+    border:double;
+    border-color:hotpink;
+    border-width: 10px;
+   
+    
+}
+.head_div
+{
+    background-color: white;
+    margin:auto;
+}
+h1.heading{
+    color:black;
+    text-shadow: 2px 2px hotpink;
+    font-size: 60px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+    font-weight: bold;
+
+}
+table,th,td{
+    text-align: center;
+    line-height: 30px;
+    font-size:15px;
+    text-align: left;
+    width:70%;
+}
+body{
+    background-image:url("https://img.freepik.com/free-photo/pink-school-stationery-desk_23-2148194647.jpg");
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+input,select{
+    width:200px;
+}
+button{
+    color:white;
+    background-color: black;
+    width:350px;
+    height:40px;
+    font-weight: bold;
+    border-color: hotpink;
+    border-style: solid;
+    text-align: center;
+    text-shadow: 0.5px 0.5px pink;
+    border-radius: 15px;
+}
