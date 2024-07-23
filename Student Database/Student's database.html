@@ -1,0 +1,64 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="stud_database.css">
+    </head>
+    <body>
+        
+        <div id="add_display">
+        <h1 id="main">STUDENT MARK DATABASE</h1>
+        <div id="navigation">
+            <form id="form" onsubmit="return false">
+            
+                <table id="table1">
+                    <tr><td>Name : </td><td><input type="text" id="stud_name"/></td></tr>
+                    <tr><td>Roll No : </td><td><input type="number" id="rollNo"></td></tr>
+                    <tr><td>Language : </td><td><input type="number" id="lang"></td></tr>
+                    <tr><td>English : </td><td><input type="number" id="eng"></td></tr>
+                    <tr><td>Science : </td><td><input type="number" id="sci"></td></tr>
+                    <tr><td>Social Science : </td><td><input type="number" id="social"></td></tr>
+                    <tr><td>Mathematics : </td><td><input type="number" id="math"></td></tr>
+                                      
+                
+                </table>
+
+                <table id="table2">
+        <tr><td><button type="submit" onclick="AddRecord()">ADD RECORD</button></td></form>
+        <td><button onclick="printData()">VIEW RECORDS</button></td></tr>
+        
+        </table>
+        <center></div></div>
+            <div id="display">
+            <div id="record">
+            <button onclick="backtohome()">BACK</button>
+            <center><h1>Student Record</h1></center>
+            <table id="Stud_Record" border="1px" >
+                <tr><th rowspan="2">Roll No</th><th rowspan="2">Name</th><th colspan="5">Mark</th><th rowspan="2">Percentage</th><th rowspan="2">Result</th><th rowspan="2">Action</th></tr>
+                <tr><th>Language</th><th>English</th><th>Science</th><th>Social Science</th><th>Mathematics</th></tr>
+                </table>
+                
+            </table>
+        </div></center></div>
+
+        <div id="editBox">
+            <form onsubmit="return false">
+            
+                <table id="table3">
+                    <tr><td>Name : </td><td><input type="text" id="stud_name1"/></td></tr>
+                    <tr><td>Roll No : </td><td><input type="number" id="rollNo1"></td></tr>
+                    <tr><td>Language : </td><td><input type="number" id="lang1"></td></tr>
+                    <tr><td>English : </td><td><input type="number" id="eng1"></td></tr>
+                    <tr><td>Science : </td><td><input type="number" id="sci1"></td></tr>
+                    <tr><td>Social Science : </td><td><input type="number" id="social1"></td></tr>
+                    <tr><td>Mathematics : </td><td><input type="number" id="math1"></td></tr>
+                                      
+                
+                </table>
+
+                <center><button type="submit" onclick="update()">UPDATE</button></center></form>
+        </div>
+
+    
+    
+    </body>
+    <script src="record.js"></script>
+</html>

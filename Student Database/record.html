@@ -1,0 +1,88 @@
+<html>
+    <head>
+        <style>
+            
+            #record{
+                
+                border-style: dashed;
+                border-radius: 10px;
+                height: 50%;
+                width:90%;
+                
+
+            }
+            table{
+                width:100%;
+                border-color:black;
+                padding: 20px;
+                text-align: center;
+                line-height: 15px;
+                
+            }
+            th{
+                background-color:black;
+                color:white;
+                padding: 15px;
+            }
+            
+            button{
+                height:30px;
+                width:100px;
+                background-color:#206647;
+                border-style:solid;
+                border-color:#143D2B;
+                border-width:2px;
+                font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                color:white;
+                font-size: 12px;
+            }
+        </style> 
+    </head>
+    <body>
+        <center><h1>Student Record</h1>
+        <div id="record">
+        <table id="Stud_Record" border="1px" >
+            <tr><th rowspan="2">Roll No</th><th rowspan="2">Name</th><th colspan="5">Mark</th><th rowspan="2">Percentage</th><th rowspan="2">Result</th><th rowspan="2">Action</th></tr>
+            <tr><th>Language</th><th>English</th><th>Science</th><th>Social Science</th><th>Mathematics</th></tr>
+            </table>
+            
+        </table>
+    </div></center>
+    </body>
+    <script >
+
+    function printData(){
+    var stud_name=sessionStorage.getItem("stud_name");
+    var rollNo=sessionStorage.getItem("rollNo");
+    var lang=Number(sessionStorage.getItem("lang"));
+    var eng=Number(sessionStorage.getItem("eng"));
+    var sci=Number(sessionStorage.getItem("sci"));
+    var social=Number(sessionStorage.getItem("social"));
+    var math=Number(sessionStorage.getItem("math"));
+
+    let recordTable=document.getElementById("Stud_Record");
+    var avg=(lang+eng+math+sci+social)/5;
+    
+    function passOrFail(){
+        if(avg>35){return "Pass"}
+        else{return "Fail"}
+    }
+    var result=passOrFail(avg);
+
+    let Row_template=`<tr>
+                    <td>${rollNo}</td>
+                    <td>${stud_name}</td>
+                    <td>${lang}</td>
+                    <td>${eng}</td>
+                    <td>${sci}</td>
+                    <td>${social}</td>
+                    <td>${math}</td>
+                    <td>${avg}%</td>
+                    <td>${result}</td>
+                    <td><button type="submit">EDIT</button><button type="submit">REMOVE</button></td></tr>`;
+    
+    recordTable.innerHTML+=Row_template;}   
+    
+
+    </script>
+</html>
