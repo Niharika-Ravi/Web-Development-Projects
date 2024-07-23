@@ -1,0 +1,93 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="orderpage.css">
+        
+    </head>
+    
+    <body>
+        <h1 class="heading">CREATE YOUR OWN PIZZA</h1>
+       <form class="form" id="form">
+        <div id="order" ></div>
+        <div class="personal_info">
+            <table class="info">
+                <tr><td>Name : </td><td><input type="text" id="cust_name"></td></tr>
+                <tr><td></td><td><p id="name_error"></p> </tr>
+                <tr><td>Phone Number: </td><td><input type="number" id="cust_phone"></td></tr>
+                <tr><td></td><td><p id="phone_error"></p > </tr>
+            </table>
+        </div>
+        
+        <div class="custom_div">
+            <h2>Customize here !!!</h2>
+            <table class="custom">
+                <tr><td>Choose the base:</center></td><td>
+                    <select id="crust">
+                        <option value="-">----</option>
+                        <option value="Thin Crust">Thin Crust</option>
+                        <option value="Thick Crust">Thick Crust</option>
+                        <option value="Normal Crust">Normal Crust</option>
+                    </select>
+                </td></tr>
+
+                <tr><td>Sauce:</center></td>
+                    <td>
+                    <select id="sauce">
+                        <option value="-">----</option>
+                        <option value="Spicy Red Sauce">Spicy Red Sauce</option>
+                        <option value="Peppery Red Sauce">Peppery Red Sauce</option>
+                        <option value="Sweet Sauce">Sweet Sauce</option>
+                        <option value="Pesto Sauce">Pesto Sauce</option>
+                        </select>
+                </td></tr>
+
+                <tr><td>Toppings:</td>
+                    <td>
+                    <select id="category" onchange="populate('category','toppings')">
+                        <option value="-">----</option>
+                        <option value="veg">Veg </option>
+                        <option value="non-veg">Non-Veg</option></select></td>
+                        <td></tr>
+                            <tr>
+                        <td></td>
+                            <td>
+                            <select id="toppings">
+                            <option>----</option>
+                            </select></td>                    
+                    <tr><td>Cheese:</td>
+                        <td>
+                        <select id="cheese">
+                            <option value="-">----</option>
+                            <option value="Mozzarella">Mozzarella</option>
+                            <option value="Cheddar">Cheddar</option>
+                            <option value="Feta">Feta</option>
+                            <option value="Ricotta">Ricotta</option>
+                            <option value="Parmesan">Parmesan</option>
+                            <option value="Mixed">Mixed</option>
+                            </select>
+                    </td></tr> </table>
+                   <center><button type="submit" id="b1"> FINALIZE & ORDER</button></center></td></tr></div>
+                </form>
+                
+                    <div id="shade3"></div>
+                    <div id="order">
+                        <h2>Your Pizza</h2>
+                        <hr width="80%" >  
+                        <div id="bill"> 
+                            <table id="ot">
+                            <tr><th> </th>
+                            <th>Item</th>
+                            <th>Price</th><tr>
+                            <tr><th>Crust : </th><td id="item1"></td><td id="price1"></td></tr>
+                            <tr><th>Sauce : </th><td id="item2"></td><td id="price2"></td></tr>
+                            <tr><th>Toppings : </th><td id="item3"></td><td id="price3"></td></tr>
+                            <tr><th>Cheese : </th><td id="item4"></td><b><td id="price4" ></td></tr>
+                            
+                            <tr><td></td><th>TOTAL : </th><td id="total"></td></tr>
+                            </table>       
+                    </div>
+                </div>
+                
+                    
+    </body>
+    <script src="orderpage.js"></script>
+</html>

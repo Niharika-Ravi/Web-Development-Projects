@@ -1,0 +1,159 @@
+
+body{
+    background-image: url("pizza-4952508_640.jpg");
+        
+    background-repeat: no-repeat;
+    background-size:cover ;
+    color:white;
+    margin:10px;
+   
+}
+
+.heading{
+    color:rgb(253, 82, 25);
+    text-shadow: 1px 1px rgb(255, 190, 168);
+    font-size:50px;
+    
+    text-align: center;
+    background-color: white;
+    font-size: 40px;
+ 
+ 
+}
+
+div.personal_info{
+    background-color:black;
+    border-radius: 10px;
+    border-style:solid;
+    border-width:3px;
+    width:500px;
+    height:70px;
+    padding:10px;
+    margin:10px;
+    border-color:rgb(253, 82, 25);
+    
+    padding:10px;
+    
+    
+}
+
+table.info{
+    color:white;
+    line-height:25px;
+    width:100%;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size:20px;
+    font-weight: bolder;
+    
+}
+
+button{
+    color:white;
+        background-color: rgb(253, 82, 25);
+        font-size: 20px;
+            width:350px;
+            height:40px;
+            font-family: monospace;
+            border-color: black;
+            border-radius: 1px;
+
+}
+p{
+    color:rgb(253, 82, 25);
+    font-size: small;
+}
+
+table.custom{
+    padding:3px;
+    width:100%;
+    text-align: left;
+    line-height: 50px;
+    font-size: 20px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+select{
+    width:200px;
+    height:30px;
+    color:rgb(253, 82, 25);
+    background-color: white;
+    border-radius: 15px;
+    font-weight:bold;
+    padding:5px;
+    text-align: center;
+
+}
+option:hover{
+    color:black;
+    background-color: rgb(253, 82, 25);
+}
+.custom_div{
+   
+    background-color:black;
+    text-align: center;
+    margin:10px;
+    height:360px;
+    border-color:rgb(253, 82, 25);
+    border-radius: 10px;
+    border-style:solid;
+    border-width: 3px;
+    padding:10px;
+    width:500px;
+
+}
+#order{
+    z-index: 2;
+    text-align: center;
+    margin:50px;
+    border-style:solid;
+    background-color: white;
+    border-color:black;
+    border-radius: 10px;
+    width:500px;
+    height:300px;
+    position:absolute;
+    top:5%;
+    left:45%;
+    color:black;
+    padding: 10px;
+   
+}
+
+#shade3{
+    z-index: 1;
+    margin:50px;
+    border-style:solid;
+    border-radius: 10px;
+    background-color:black;
+    width:500px;
+    height:300px;
+    position:absolute;
+    top:12%;
+    left:43%;
+    
+}
+#ot{
+    
+    color:black;
+    line-height: 25px;
+    width:100%;
+    font-family: monospace;
+    
+}
+
+th{
+    color: rgb(253, 82, 25);    
+    text-align: left;
+    font-weight: bold;
+    font-family: monospace;
+    font-size:15px;
+    
+}
+hr{
+    color:rgb(253, 82, 25);
+    border: double;
+}
+#bill{
+   display: none;
+   padding:10px
+
+}

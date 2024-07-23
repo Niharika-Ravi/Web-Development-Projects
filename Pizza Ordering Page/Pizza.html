@@ -1,0 +1,49 @@
+<html>
+    <style>
+        body{
+            background-image: url("pizzaback.png");
+            background-repeat: no-repeat;
+            background-size:cover ;
+         
+        }
+        
+        #order1{
+            width:400px;
+            height:50px;
+            color:white;
+            text-shadow: 2px 2px black;
+            background-color: rgb(253, 82, 25);
+            font-size: 30px;
+            font-weight: bold;
+            font-family: monospace;
+            border-color: black;
+            border-radius: 10px;
+            position:absolute;
+            top:60%;
+            left:48%;
+        }
+        #order2{
+            width:400px;
+            height:50px;
+
+            background-color:black;
+            border-color: rgb(253, 82, 25);
+            
+            border-radius: 10px;
+            position:absolute;
+            top:60.5%;
+            left:48.5%;
+        }
+    </style>
+    <body>
+        <button id="order2"></button>
+        
+        <button id="order1" type="submit" onclick="changepage()">CUSTOMIZE & ORDER</button>
+
+    </body>
+    <script>
+        function changepage(){
+            location.replace('orderpage.html')
+        }
+    </script>
+</html>
