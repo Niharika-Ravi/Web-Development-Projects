@@ -1,0 +1,68 @@
+header{
+    background-color:#3F261F;
+    color:white;
+    height: 20%;
+    font-size: 50px;
+    text-align: center;
+    font-family::Verdana, Geneva, Tahoma, sans-serif;
+    border-radius: 20px;
+   
+
+}
+.container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows:50vh 50vh 50vh ;
+    grid-template-areas:
+    "i1 i2"
+    "i3 i4"
+    "i5 i6";
+    height: 100%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.item1{
+    grid-area: i1;
+    background-image: url("https://themetdet.com/wp-content/uploads/2022/11/Lithuania002.jpeg");
+    background-size: cover ;
+    
+}
+.item2{
+    grid-area: i2;
+    padding: 20px;
+    
+}
+button{
+    background-color: #3F261F;
+    color:#EEC297;
+    border-style: hidden;
+    width:100px;
+    height: 50px;;
+    border-radius: 10px 20px ;
+    font-weight:bold;
+}
+
+.item4{
+    grid-area: i4;
+    background-image: url("https://community.thriveglobal.com/wp-content/uploads/2018/09/helping-hands.jpg");
+    background-size: cover ;
+}
+.item3{
+    background-color: #EEC297;
+    grid-area: i3;
+    padding: 20px;
+}
+.item5{
+    grid-area: i5;
+    background-image: url("https://cdn.shopify.com/s/files/1/0079/6121/5087/articles/sunflour-bakery-company-1080x675.jpg?v=1560364289");
+    background-size: cover ;
+
+}
+.item6{
+    
+    grid-area: i6;
+    padding: 20px;
+
+}
+p{
+    font-size: 18px;
+}

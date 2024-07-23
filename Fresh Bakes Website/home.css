@@ -1,0 +1,292 @@
+*{
+    scroll-behavior: smooth;
+}
+#heading{
+    color:#3F261F;
+    font-family:cursive;
+    font-size: 40px;
+    font-weight: bolder;
+    font-style: italic;
+    text-shadow: 3px 3px #c17762;
+}
+#navBar{
+    display: flex;
+    flex:1;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 5px;
+    height: 50px;
+    color: #7A260D;
+    background-color: #EEC297;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    
+}
+#navTable{
+   width: 80%;
+   font-size: 22px;   
+   align-self: center;
+}
+
+a{
+    text-decoration: none;
+    color: #7A260D;
+    font-size: 22px;   
+    
+}
+a:hover{
+    color: black;
+
+}
+#homebutton,select{
+    color: #7A260D;
+    text-align: center;
+    border: none;
+    font-size: 22px;
+    background-color: #EEC297;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+select:hover{
+    color: black;
+    background-color: #EEC297;
+    border: none;
+
+}
+img{
+    width:100%;
+    
+}
+#heading2{
+    background-color:#7A260D;
+    color:#EEC297;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+ 
+    font-size: 35px;
+}
+#headerImage{
+    z-index: 1;
+}
+#hourslocation{
+    display: none;
+    position: absolute;
+    top:30%;
+    left:30%;
+    width:500px;
+    height:400px;
+    z-index: 2;
+}
+#hourslocation_button{
+
+    color: #7A260D;
+    text-align: center;
+    border: none;
+    font-size: 22px;
+    background-color: #EEC297;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+#ourSpecials{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;  padding: 10px;
+   
+   
+    
+}
+#image1,#image2,#image3,#image4{
+    margin: 5px;
+    width:250px;
+    height: 300px;
+    background-color:#EEC297;
+    border-radius: 15px;
+    border-style: hidden;
+    padding: 5px;
+    line-height: 15px;
+    border-color:#7A260D;
+    opacity: 0.9;
+}
+#image1:hover,#image2:hover,#image3:hover,#image4:hover,#image5:hover,#image6:hover,#image7:hover,#image8:hover{
+    border-color:#7A260D;
+    border-radius: 15px;
+    border-left:#EEC297;border-bottom: #EEC297;
+    border-width:5px;
+    color:#3F261F;
+    border-style:groove;
+    opacity: 1.0;
+
+}
+#image5,#image6,#image7,#image8{
+    display: none;
+    margin: 5px;
+    width:250px;
+    height: 300px;
+    background-color:#EEC297;
+    border-radius: 15px;
+    border-style: hidden;
+    padding: 5px;
+    line-height: 15px;
+    border-color:#7A260D;
+    opacity: 0.9;
+}
+#chocochip{
+    width:200px;
+    height:200px;
+    border-radius: 15px;
+  
+    border-style:hidden
+}
+#viewproducts_shadow{
+    position: relative;
+    width: 200px;
+    height: 40px;
+    border-style:solid;
+    border-width: 2px;
+    border-color:#3F261F;
+    border-radius: 10px;
+    background-color: white;
+
+}
+#viewproducts{
+    z-index: 2;
+    position: absolute;
+    bottom:-5px;
+    right:-5px;
+    background-color: #3F261F;
+    color: white;
+    width: 200px;
+    height: 40px;
+    border-style:solid;
+    border-width: 2px;
+    border-color:#3F261F;
+    border-radius: 10px;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 15px;
+}
+#pastryItems{
+    display: none;
+}
+#pastryimage{
+    width:200px;
+    height:200px;
+}
+#itemTable{
+    margin:3px;
+    padding:10px;
+    width:90%;
+    background-color: #EEC297;
+    color:black;
+    text-align: center;
+    border:2px solid #7A260D;
+}
+#itemTable_head{
+    background-color: #7A260D;
+    color:#EEC297 ;
+    font-size: 20px;
+}
+#itemTable_data{
+    background-color: #EEC297;
+    color:black;
+    text-align: center;
+    border:2px solid #7A260D;
+    font-size: 20px;
+}
+#pastryHeading{
+    color:#3F261F;
+    font-family:cursive;
+    font-weight: bolder;
+    font-style: italic;
+    
+
+}
+.BackToTop{
+    margin: 10px;
+    padding: 10px;
+    background-color: #3F261F;
+    color: #EEC297;
+    width: 30px;
+    height: 15px;
+    position: fixed;
+    bottom:  30px;
+    right:30px;
+    text-align: center;
+    border: 1px solid #3F261F;
+    border-radius: 50px;
+
+    
+}
+footer{
+    background-image: url("footerback.png");
+    background-size: cover;
+    background-repeat:no-repeat;
+    height:25%;
+    color:white;
+    font-weight: bold;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-shadow: 1px 0.5px white;
+    font-size: 18px;
+    line-height: 5px;
+    padding: 10px;
+
+}
+
+div .fa-arrow-alt-to-top{
+    color:#EEC297;
+    margin:10px;
+    
+}
+#searchfield{
+    height: 30px;
+    width: 80%;
+    border:1px solid #7A260D;
+    border-radius: 5px;
+    padding: 5px;
+    margin: 5px;
+    margin-right: 0;
+}
+#searchButton{
+    height: 30px;
+    width: 30px;
+    border:1px solid #7A260D;
+        border-radius: 5px;
+    padding: 5px;
+    margin: 5px;
+    background-color: #7A260D;
+    color: #EEC297;
+    font-weight: bolder;
+}
+#searchResponse{
+    display: none;
+    flex:1;
+    flex-wrap:wrap;
+    overflow-y: scroll;
+    gap:20px ;
+    z-index: 3;
+    width: 70%;
+    height:50%;
+    background-color:#7A260D;
+    position: absolute;
+    top:35%;
+    left:10%;
+    border:3px solid #EEC297;
+    border-radius: 10px;
+    margin: 5px;
+    padding: 10px;
+
+}
+#sitem1,#sitem2,#sitem3,#sitem4,#sitem5,#sitem6,#sitem7,#sitem8,#sitem9{
+    display: none;
+    margin: 5px;
+    width:250px;
+    height: 250px;
+    background-color:#EEC297;
+    border-radius: 15px;
+    border-style: hidden;
+    padding: 5px;
+    line-height: 15px;
+    border-color:#7A260D;
+    opacity: 0.9;
+}
+#search_heading{
+    color:white;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}

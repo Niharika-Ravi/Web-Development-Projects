@@ -1,0 +1,85 @@
+<html>
+    <head>
+        <title>Order Page</title>
+        <link rel="stylesheet" href="Orderpage.css">
+    </head>
+    <body>
+        <header>
+            <img class="headerimg" src="Contact.png"></header>
+        <div id="entire_page">
+        <div id="Customer_Information">
+            <form id="form" onsubmit="return false">
+                <table class="info">
+                    <tr><td>Name : </td><td><input type="text" id="cust_name"></td></tr>
+                    <tr><td>Phone Number: </td><td><input type="number" id="cust_phone"></td></tr>
+                    <tr><td>Method of Delivery : </td>
+                    <td><input type="radio" id="pickup" name="mode" onchange="populate()"/>Pickup
+                    <input type="radio" id="homedelivery" name="mode" onchange="populate()"/>Home Delivery</td></tr>
+
+                    <tr><td></td><td><div id="selectlocation">Select Branch for pickup:
+                    <select id="selectlocation_op">
+                        <option value="null">-----</option>
+                        <option value="Anna Nagar">Anna Nagar</option>
+                        <option value="Nungambakam">Nungambakam</option>
+                        <option value="Chetpet">Chetpet</option>
+                        <option value="Marina Beach">Marina Beach</option>
+                    </select></div></td></tr>
+                    <tr>
+                        <td></td>
+
+                        <td><div id="addressbox"><table id="table2">
+                            <tr><td>Door No:</td><td><input type="text" id="doorNo"></input></td></tr>
+                            <tr><td>Street:</td><td><input type="text" id="street"></input></td></tr>
+                            <tr><td>Pincode:</td><td><input type="number" id="pincode"></input></td></tr>
+                        </table></div>
+                    </td></tr>
+                    <tr><td>
+                        <label>Select category: </label></td>
+                        <td>
+                        <select id="category" onchange="productpopulate()"> 
+                            <option value="novalue">-----</option>
+                            <option value="Cake">Cakes</option>
+                            <option value="Donut">Donut</option>
+                            <option value="Puff">Puff Pastry</option>
+                            
+
+                        </select>
+                    </td></tr></table>
+                    <div id="productdiv">
+                        
+                        <div id="item1"></div>
+                        <div id="item2"></div>
+                        <div id="item3"></div>
+                    </div>
+                </table>
+                <center><button onclick="CheckInput()">PLACE ORDER</button></center>
+
+            </form>
+        </div>
+        <div id="bill">
+            <h1 id="billheading">Your Order</h1>
+            <table >
+                <tr>
+                    <td>Name :</td>
+                    <td id="customer_name"></td>
+                </tr>
+                <tr>
+                    <td>Phone Number: </td>
+                    <td id="customer_phone"></td>
+                </tr>
+                <tr>
+                    <td>Mode of Delivery :</td><td id="delivery_mode"></td></tr>
+                <tr>
+                    <td id="delivery_type"></td><td id="delivery_location"></td>
+                </tr></table>
+                <hr width="80%">
+                <table id="item_price" width="100%"></table>
+                <hr width="80%">
+                <table padding="10px">
+                <tr><th>TOTAL</th><th id="total"></th></tr></table>
+                <center><button id="finalize" onclick="ConfirmOrder()">FINALIZE</button></center>
+        </div>
+    </div>
+    </body>
+    <script src="Orderpage.js"></script>
+</html>

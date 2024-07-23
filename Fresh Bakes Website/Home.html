@@ -1,0 +1,161 @@
+<html>
+    <head><title>fresh bakes</title>
+    <link rel="stylesheet" href="home.css">
+    <script src="https://kit.fontawesome.com/2fb8b66f5d.js" crossorigin="anonymous"></script>
+</head>
+    
+    <body>
+        <div id="homepage">
+        <header>
+        <img src="Contact.png">
+        <!--Header section-->
+        <div id="navBar">
+            <table id="navTable"><tr>
+            <td><a href="Home.html">HOME</a></td>
+            <td><select onchange="select()" id="bakeType">
+                <option value="Pastry">PASTRIES</option>
+                <option value="Cake">CAKES</option>
+                <option value="Donut">DONUTS</option>
+                <option value="Puff">PUFF PASTRIES</option>
+            </select></td>
+            <td><button id="hourslocation_button" onclick="Openhl()">HOURS & LOCATIONS</button></td>
+            <td><a href="AboutUs.html" target="_blank">ABOUT US</a></td>
+            <td><a href="Orderpage.html">PLACE ORDER</a></td>
+            <td><input id="searchfield" type="search" placeholder="What are you looking for?"><button id="searchButton" onclick="search()"><i class="fa-solid fa-magnifying-glass"></i></button></td></tr></table>
+        </div>
+        <div id="headerImage">
+            <img src="hbackground.png">
+            <div><iframe id="hourslocation" src="hours&location.html"></iframe></div>
+        </div></header>
+
+    <!--Search Response div -->
+        <center>
+        
+        <div id="searchResponse">
+            <div id="sitem1">
+                <center><img id="chocochip"src="https://assets.epicurious.com/photos/575991f3973781fc02c2a827/6:4/w_1600,c_limit/EP_06062016_Vanilla-Buttermilk-Wedding-Cake-with-Raspberries-and-Orange-Cream-Cheese-Frosting.jpg">
+                <br>
+                <h3>Butter Cake</h3></center>
+            </div>
+            <div id="sitem2">
+                <center><img id="chocochip"src="https://assets.epicurious.com/photos/57c6f789082060f11022b586/6:4/w_1600,c_limit/no-recipe-required-pound-cake-lemon-poppy-seed-30082016.jpg">
+                <br>
+                <h3>Pound Cake</h3></center>
+            </div>
+            <div id="sitem3">
+                <center><img id="chocochip"src="https://assets.epicurious.com/photos/56f301595380ea2215f3b49c/6:4/w_1600,c_limit/1015-FS-CAKE01.jpg">
+                <br>
+                <h3>Sponge Cake</h3></center>
+            </div>
+            <div id="sitem4">
+                <center><img id="chocochip"src="https://www.allrecipes.com/thmb/F1TS1vVziVF1vlQ5tliBNPXdyeU=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/3390842-d41cdb60d25742489c40635c5ded376c.jpg">
+                <br>
+                <h3>Cake Doughnuts</h3></center>
+            </div>
+            <div id="sitem5">
+                <center><img id="chocochip"src="https://www.allrecipes.com/thmb/9-o9OJZilnT9Fw_6VvxejgqgVRQ=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/3356160-f852b2a62dee4b8481357159aa53d92f.jpg">
+                <br>
+                <h3>Doughnut Holes</h3></center>
+            </div>
+            <div id="sitem6">
+                <center><img id="chocochip"src="https://www.allrecipes.com/thmb/hSHC4YzqCXuT6Qa_viKHOsM4UKE=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/187302-c61e4aab37bf4595a858b56fff1ac57a.jpg">
+                <br>
+                <h3>Jelly Doughnut</h3></center>
+            </div>
+            <div id="sitem7">
+                <center><img id="chocochip"src="https://www.tasteofhome.com/wp-content/uploads/2018/01/Raspberry-Chocolate-Puffs_EXPS_SDAM17_20395_B12_07_6b-1.jpg?w=1200">
+                <br>
+                <h3>Raspberry Chocolate Puffs</h3></center>
+            </div>
+            <div id="sitem8">
+                <center><img id="chocochip"src="https://www.tasteofhome.com/wp-content/uploads/2019/10/Blood-Orange-Caramel-Tarte-Tatin_EXPS_TOHFM20_162127_B09_26_8b-4.jpg?w=1200">
+                <br>
+                <h3>Blood Orange Caramel Tarte Tatin</h3></center>
+            </div>
+            <div id="sitem9">
+                <center><img id="chocochip"src="https://www.tasteofhome.com/wp-content/uploads/2018/01/Puff-Pastry-Chicken-Potpie__EXPS_SDON16_199097_C06_08_3b-4.jpg?w=1200">
+                <br>
+                <h3>Puff Pastry Chicken Potpie</h3></center>
+            </div>
+        </div></center>
+        <br><div>
+            <center><h1 id="heading2">OUR SPECIALS</h1></center>
+            <div id="ourSpecials">
+            <div id="image1">
+                <br><br>
+                <center><img id="chocochip"src="https://www.momontimeout.com/wp-content/uploads/2020/09/stack-of-chewy-chocolate-chip-cookies-on-dark-wood-board-square.jpg">
+                <br>
+                <h3>Choco Chip Cookies</h3>
+                <p>Enjoy the chewest choco chip cookies!</p></center>
+            </div>
+            <div id="image2"><br><br>
+                <center><img id="chocochip"src="https://theobroma.in/cdn/shop/files/RedVelvetCakehalfkg_341891f8-fc0d-431e-b574-98c3764c4e74.jpg?v=1711125810">
+                <br>
+                <h3>Red Velvet Cake</h3>
+                <p>Ultra moist, buttery, tender and soft !</p></center>
+            </div>
+            <div id="image3"><br><br>
+                <center><img id="chocochip"src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS7H5wAYYqEqDoEsAKpSb2HZS3fSswsk_PeDeKarzBHDCY81gxHlYCKY54pYW-Vyv0otiU&usqp=CAU">
+                <br>
+                <h3>Browine with Ice cream</h3>
+                <p>Rich chocolate brownie with vanilla!</p></center>
+            </div>
+            <div id="image4"><br><br>
+                <center><img id="chocochip"src="creampuff.jpeg">
+                <br>
+                <h3>Perfect Cream Puffs</h3>
+                <p>Airy delights with delicate sweetness</p></center>
+            </div>
+            <div id="image5"><br><br>
+                <center><img id="chocochip"src="https://www.tasteofhome.com/wp-content/uploads/2019/10/Blood-Orange-Caramel-Tarte-Tatin_EXPS_TOHFM20_162127_B09_26_8b-4.jpg?w=1200">
+                <br>
+                <h3>Blood Orange Tarte Tatin</h3>
+                <p>Airy delights with delicate sweetness</p></center>
+            </div>
+            <div id="image6"><br><br>
+                <center><img id="chocochip"src="https://www.allrecipes.com/thmb/hSHC4YzqCXuT6Qa_viKHOsM4UKE=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/187302-c61e4aab37bf4595a858b56fff1ac57a.jpg">
+                <br>
+                <h3>Jelly Doughnut</h3>
+                <p>Airy delights with delicate sweetness</p></center>
+            </div>
+            <div id="image7"><br><br>
+                <center><img id="chocochip"src="https://www.tasteofhome.com/wp-content/uploads/2018/01/Raspberry-Chocolate-Puffs_EXPS_SDAM17_20395_B12_07_6b-1.jpg?w=1200">
+                <br>
+                <h3>Raspberry Chocolate Puffs</h3>
+                <p>Airy delights with delicate sweetness</p></center>
+            </div>
+            <div id="image8"><br><br>
+                <center><img id="chocochip"src="https://www.allrecipes.com/thmb/F1TS1vVziVF1vlQ5tliBNPXdyeU=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/3390842-d41cdb60d25742489c40635c5ded376c.jpg">
+                <br>
+                <h3>Cake Doughnuts</h3>
+                <p>Airy delights with delicate sweetness</p></center>
+            </div>
+            
+        
+        <div id="viewproducts_shadow">
+        <h2><center ><button onclick="viewproducts()" id="viewproducts">View other products</button></center></h2>
+        </div>
+    </div>
+    <div class="BackToTop" onclick="scrolltotop()"><i class="fa-solid fa-angle-up"></i></div>
+</div>
+<footer>
+    <p>Contact:</p>
+    <p>Phone: +91 65490 89032</p>
+    <p>Email: freshbakes@bakery.com</h2>
+    <p>For queries contact us via query.freshbakes@bakery.com</p>
+</footer></div>
+<!--Pastry Items Page-->
+    
+    <div id="pastryItems">
+        <center >
+            <button id="homebutton"><a href="Home.html">HOME</a></td></button>
+        <div id="pastryHeading"></div>
+        <table id="itemTable">
+            <tr id="itemTable_row"><th id="itemTable_head">Item Name</th><th id="itemTable_head">Image</th><th id="itemTable_head">Price</th></tr> 
+        </table></center>
+    </div>
+
+   
+    </body>
+    <script src="home.js"></script>
+</html>
